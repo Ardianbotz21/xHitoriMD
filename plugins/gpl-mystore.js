@@ -9,8 +9,8 @@ let handler = async (m, { conn, args, command }) => {
 • Wallpaper Dekstop/Mobile
 ═┅══┅══┅═
 *ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ*
-╰►  • wa.me/6287855823556
-         • instagram.com/_lucxfvr `.trim()
+╰►  • wa.me/6285954184111
+         • instagram.com/gopala5u `.trim()
 let totalf = Object.values(global.plugins).filter(
     (v) => v.help && v.tags
   ).length;
