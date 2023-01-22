@@ -1,7 +1,7 @@
 <p align="center">
     <img src="https://telegra.ph/file/af0347a27b64bb772343e.jpg" width="100%" style="margin-left: auto;margin-right: auto;display: block;">
 </p>
-<h1 align="center">PENTAGRAM</h1>
+<h1 align="center">HITORI</h1>
 <p align="center">
   <a href="https://github.com/VarrelKun"><img src="http://readme-typing-svg.herokuapp.com?color=FFFFFF&center=true&vCenter=true&multiline=false&lines=PENTAGRAM+Multi+Device;Base+ori+by+BochilGaming;Recode+By+Letta;Re-code+By+GOPALA5U;Give+star+and+forks+this+Repo+:D;Follow+My+Github" alt="UwU">
 </p>
