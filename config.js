@@ -44,39 +44,36 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 /*============== SOCIAL ==============*/
 
 // Wajib diisi ya kak!, kalo ga punya biarin aja, biar ada creditsnya :v
-global.sig = 'https://www.instagram.com/_lucxfvr'
-global.sgh = 'https://github.com/VarrelKun'
-global.sgc = 'https://chat.whatsapp.com/DRnWIXKf0VLH4KArdpH4IX'
+global.sig = 'https://www.instagram.com/nvkenn_'
+global.sgh = 'https://github.com/nvhitori'
+global.sgc = 'https://chat.whatsapp.com/KKD87ysyynxL7l709hLjnw'
 global.sdc = " "
-global.snh = 'https://PentaPage.my.id'
+global.snh = 'https://xhitori.my.id'
 
 /*============== PAYMENT ==============*/
-global.pdana = '085954184111'
+global.pdana = '082125276167'
 global.povo = '_'
 global.pgopay = '_'
-global.ppulsa = '085954184111'
-global.ppulsa2 = '085954184111'
+global.ppulsa = '082125276167'
+global.ppulsa2 = '082125276167'
 global.psaweria = '_'
 
 /*============== NOMOR ==============*/
-global.nomorbot = '17754764633'
-global.nomorown = '6282321015688'
-global.namebot = 'xynaa'
-global.nameown = 'Xennz'
+global.nomorbot = '6281323870860'
+global.nomorown = '6282125276167'
+global.namebot = '𝐗𝐇𝐈𝐓𝐎𝐑𝐈'
+global.nameown = 'Vall'
 
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['17754764633'],
-  ['6285954184111'],
-  ['18126338970'],
-  ['6282321015688', 'Xynaa', true]
+  ['6282125276167', 'Vall', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
 global.prems = [] // Premium user bukan disini nambahinnya, ketik .addprem @user 10
 
-global.xkey = 'APIKEYMU'
+
 /*============== API ==============*/
 global.APIs = { // API Prefix
   // name: 'https://website'
@@ -94,7 +91,8 @@ global.APIs = { // API Prefix
   hardianto: 'https://hardianto.xyz',
   botstyle: 'https://botstyle-api.herokuapp.com',
   adiisus: 'https://adiixyzapi.herokuapp.com',
-  males: 'https://malesin.xyz'
+  LeysCoder: 'https://leyscoders-api.herokuapp.com',
+  kanx: 'https://kannxapi.herokuapp.com/'
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
@@ -114,19 +112,21 @@ global.APIKeys = { // APIKey Here
 // Kata APIKEY itu isi dengan apikey lu sendiri, dengan beli ke website itu
 
 /*============== WATERMARK ==============*/
-global.wm = '                「 𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌 」' //Main Watermark
-global.wm2 = '𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌'
-global.wm3 = '⛧𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌'
+global.wm = '                「 𝐗𝐇𝐈𝐓𝐎𝐑𝐈 」' //Main Watermark
+global.wm2 = '𝐗𝐇𝐈𝐓𝐎𝐑𝐈'
+global.wm3 = '⛧𝐗𝐇𝐈𝐓𝐎𝐑𝐈'
 global.botdate = `⫹⫺ 𝗗𝗮𝘁𝗲: ${week} ${date}`
 global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
-global.titlebot = '⛧┊ PENTAGRAM ʙᴏᴛ'
+global.titlebot = '⛧┊ 𝐇𝐈𝐓𝐎𝐑𝐈 𝐁𝐎𝐓'
 global.author = global.wm
 
 
 /*============== LOGO ==============*/
-global.thumb = 'https://telegra.ph/file/162d60896b53c2e885c40.jpg' //Main Thumbnail
-global.thumb2 = 'https://telegra.ph/file/162d60896b53c2e885c40.jpg'
-global.thumbbc = 'https://telegra.ph/file/162d60896b53c2e885c40.jpg' //For broadcast
+global.cute = ['https://telegra.ph/file/22eaa93d446a630c2ded0.jpg'] 
+
+global.thumb = 'https://telegra.ph/file/ca64f92ece77614c05332.jpg' //Main Thumbnail
+global.thumb2 = 'https://telegra.ph/file/ca64f92ece77614c05332.jpg'
+global.thumbbc = 'https://telegra.ph/file/ca64f92ece77614c05332.jpg' //For broadcast
 global.giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
 
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
@@ -142,7 +142,7 @@ global.dxlsx = 'application/vnd.openxmlformats-officedocument.spreadsheetml.shee
 global.dpdf = 'application/pdf'
 global.drtf = 'text/rtf'
 
-global.thumbdoc = 'https://telegra.ph/file/162d60896b53c2e885c40.jpg'
+global.thumbdoc = 'https://telegra.ph/file/22eaa93d446a630c2ded0.jpg'
 
 /*=========== FAKE SIZE ===========*/
 global.fsizedoc = '99999999999999' // default 10TB
@@ -172,8 +172,8 @@ global.htjava = '𔔮'   //hiasan Doang :v
 global.hsquere = ['⛶','❏','⫹⫺']
 
 /*============== STICKER WM ==============*/
-global.stickpack = '_'
-global.stickauth = `𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌`
+global.stickpack = '©'
+global.stickauth = `𝐗𝐇𝐈𝐓𝐎𝐑𝐈`
 
 global.multiplier = 38 // The higher, The harder levelup
 
