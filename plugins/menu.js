@@ -196,26 +196,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
     let mpt = clockString(_mpt)
       const sections = [
    {
-    title: `${htki} RULES ${htka}`,
+    title: `${htki} MAIN ${htka}`,
 	rows: [
-	    {title: `🚦 ${pmenus} PLEASE READ THIS RULES
-
-® ${pmenus} DILARANG SPAM BOT | *JIKA BELUM BERDONASI*
-® ${pmenus} GUNAKAN BOT SEBAIK MUNGKIN | *PASTI FAHAMLAH*
-® ${pmenus} OWNER ADALAH DEWA`, rowId: ".sc", description: `${namebot}`},
-	    //{title: ` ${pmenus} GUNAKAN BOT SEBAIK MUNGKIN`, description: "Pasti Fahamlah"},
-	    //{title: `🚥 ${pmenus} OWNER ADALAH DEWA`, description: `${namebot}`},
-	]
-    },{
-	title: `${htki} MAIN ${htka}`,
-	rows: [
-	    {title: `💌 ${pmenus} OWNER BOT`, rowId: ".owner", description: "Menampilkan List owner BOT"},
-	]
-    },{
-	title: `${htki} SUPPORT ${htka}`,
-	rows: [
-	    {title: `🌟 ${pmenus} BUY PREMIUM`, rowId: ".premium", description: "Menampilkan list harga premium"},
-	    {title: `💳 ${pmenus} DONASI`, rowId: ".donasi", description: 'Support BOT agar lebih fast respon'},
+	    {title: `⚠️ Information ⚠️`, rowId: ".gopal"},
 	]
 	},{
 	title: `${htki} MENU ${htka}`,
@@ -227,6 +210,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
         {title: `╿📸╽Image`, rowId: ".? image", description: "⤷ Random search image"},
 	{title: `╿🎮╽Game`, rowId: ".? game", description: "⤷ Gamenya seru seru lho >-<"},
 	{title: `╿🧩╽Fun`, rowId: ".? fun", description: "⤷ Fitur yang aman untuk keluarga"},
+	{title: `╿☠️╽Virus`, rowId: ".? virus", description: "⤷ Virus/Bug WhatsApp"},
 	{title: `╿🐚╽ Kerang`, rowId: ".? kerangajaib", description: "⤷ Tanyakan pada ketua club"},
 	{title: `╿📑╽Quotes`, rowId: ".? quotes", description: "⤷ Random Inspirasi"},
 	{title: `╿⛩️╽Anime`, rowId: ".? anime", description: "⤷ Kamu wibu ya bang?"},
@@ -249,7 +233,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 	]
   },
 ]
-
+let audio = fs.readFileSync('./media/spam.opus')
 let usrs = db.data.users[m.sender]
 let tek = `*${ucapan()} ${conn.getName(m.sender)}*
 📄 *ɴᴀᴍᴇ:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
@@ -262,13 +246,16 @@ ${clockStringP(usrs.premiumTime - new Date())}` : ''}
 `
 const listMessage = {
   text: tek,
-  footer: '⚠️ *Note:* Bot masih dalam pengembangan, jika menemukan bug/fitur error harap dimaklumi\n\n➣ https://xpenta.my.id',
+  footer: '⚠️ *Note:* Mohon tidak _SPAM_ saat menggunakan BOT agar tidak di Banned',
   mentions: await conn.parseMention(tek),
   title: `${htki} *LIST MENU* ${htka}`,
   buttonText: `LIST MENU ⎙`,
   sections
 }
   if (teks == '404') {
+  
+  		conn.sendFile(m.chat, audio,m)
+  
   	return conn.sendMessage(m.chat, listMessage, { quoted: m, mentions: await conn.parseMention(tek), contextInfo:{ forwardingScore: 99999, isForwarded: true }})
     }
   	
@@ -459,17 +446,39 @@ const listMessage = {
     
     //------- BUTTON DOC WITH EXTERNAL ADS
     // MAMPUS DI ENC :v
-    await conn.sendButton(m.chat, `═┅═❏ *DASHBOARD* ❏═┅═`, text, fla, [['Menu', '.menu']], m, {
-contextInfo: { externalAdReply :{
-                        mediaUrl: sig,
-                        mediaType: 2,
-                        description: 'anu',
-                        title: titlebot,
-                        body: bottime,          previewType: 1,
-                        thumbnail: fs.readFileSync("./darkness.jpg"),
-                        sourceUrl: 'https://youtube.com/c/nxvall'
-                      }}
-})
+    let dj = fs.readFileSync('./media/papamama.opus')
+    
+    
+    conn.sendFile(m.chat, dj, m)
+    
+let url = `${pickRandom(['https://telegra.ph/file/22eaa93d446a630c2ded0.jpg'])}`
+
+let buttonMessage= {
+'document':{'url':sgc},
+'mimetype':global.ddocx,
+'fileName':'═┅═❏ *DASHBOARD* ❏═┅═',
+'fileLength':fsizedoc,
+'pageCount':fpagedoc,
+'contextInfo':{
+'externalAdReply':{
+'showAdAttribution':true,
+'mediaUrl':global.sig,
+'mediaType':2,
+'previewType':'pdf',
+'title':global.titlebot,
+'body':botdate,
+'thumbnail':await(await fetch(url)).buffer(),
+'sourceUrl':sgc}},
+'caption':wm,
+'footer':text,
+'buttons':[
+{'buttonId':'.menu','buttonText':{'displayText':'Menu'},'type':1},
+{'buttonId':'.sewa','buttonText':{'displayText':'Sewa'},'type':1}
+],
+'headerType':6}
+    await conn.sendMessage(m.chat,buttonMessage, { quoted:m})
+
+
 //-------DOC TEMPLATE
     const message = {
             document: { url: thumbdoc },
