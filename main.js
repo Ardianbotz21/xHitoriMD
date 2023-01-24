@@ -29,8 +29,9 @@ import {
   mongoDB,
   mongoDBV2
 } from './lib/mongoDB.js';
+import store from './lib/storee.js'
 const {
-  useSingleFileAuthState,
+  //useSingleFileAuthState,
   DisconnectReason
 } = await import('@adiwajshing/baileys')
 
@@ -86,14 +87,34 @@ global.loadDatabase = async function loadDatabase() {
 loadDatabase()
 
 global.authFile = `${opts._[0] || 'xpenta'}.data.json`
-console.log(`Load AuthFile from ${authFile}`)
-const { state, saveState } = useSingleFileAuthState(global.authFile)
+const { state, saveState } = store.useSingleFileAuthState(global.authFile)
 
-const connectionOptions = {
+const connectionOptions = ({
   printQRInTerminal: true,
   auth: state,
-  // logger: pino({ level: 'trace' })
-}
+  patchMessageBeforeSending: (message) => {
+                const requiresPatch = !!(
+                    message.buttonsMessage 
+                    || message.templateMessage
+                    || message.listMessage
+                );
+                if (requiresPatch) {
+                    message = {
+                        viewOnceMessage: {
+                            message: {
+                                messageContextInfo: {
+                                    deviceListMetadataVersion: 2,
+                                    deviceListMetadata: {},
+                                },
+                                ...message,
+                            },
+                        },
+                    };
+                }
+
+                return message;
+            },
+    })
 
 global.conn = makeWASocket(connectionOptions)
 conn.isInit = false
@@ -131,7 +152,7 @@ async function connectionUpdate(update) {
   }
   if (global.db.data == null) await loadDatabase()
   console.log(JSON.stringify(update, null, 4))
-  if (update.receivedPendingNotifications) conn.sendMessage(`6285954184111@s.whatsapp.net`, {text: 'Successfully connected by\n\n*💌 • Name BOT:* ' + global.namebot + '\n*🎐 • Name OWNER:* ' + global.nameown + '\n*📞 • Nomor OWNER:* https://wa.me/' + global.nomorown })//made by Gama Naufal 
+  if (update.receivedPendingNotifications) conn.sendButton(global.nomorown + `@s.whatsapp.net`, `Successfully connected`, wm, [['MENU', '.menu']], null)//made by Gama Naufal 
 }
 
 
