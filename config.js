@@ -44,30 +44,30 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 /*============== SOCIAL ==============*/
 
 // Wajib diisi ya kak!, kalo ga punya biarin aja, biar ada creditsnya :v
-global.sig = 'https://www.instagram.com/nvkenn_'
-global.sgh = 'https://github.com/nvhitori'
+global.sig = 'https://www.instagram.com/diansbotz'
+global.sgh = 'https://github.com/ArdianBotz'
 global.sgc = 'https://chat.whatsapp.com/KKD87ysyynxL7l709hLjnw'
 global.sdc = " "
-global.snh = 'https://xhitori.my.id'
+global.snh = 'https://lynk.id/ardianbotz'
 
 /*============== PAYMENT ==============*/
-global.pdana = '082125276167'
+global.pdana = '_'
 global.povo = '_'
-global.pgopay = '_'
-global.ppulsa = '082125276167'
-global.ppulsa2 = '082125276167'
-global.psaweria = '_'
+global.pgopay = '0895328298685'
+global.ppulsa = '0895328298685'
+global.ppulsa2 = '0895328298685'
+global.psaweria = 'https://saweria.co/ardianbotz'
 
 /*============== NOMOR ==============*/
-global.nomorbot = '6281323870860'
-global.nomorown = '6282125276167'
-global.namebot = '𝐗𝐇𝐈𝐓𝐎𝐑𝐈'
-global.nameown = 'Vall'
+global.nomorbot = '62895328298685'
+global.nomorown = '62895328298685'
+global.namebot = '𝗭𝘆𝗸𝗼𝗕𝗼𝘁𝘇-𝗠𝗗'
+global.nameown = 'Dians Aja'
 
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['6282125276167', 'Vall', true]
+  ['62895328298685', 'Dians Aja', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -112,12 +112,12 @@ global.APIKeys = { // APIKey Here
 // Kata APIKEY itu isi dengan apikey lu sendiri, dengan beli ke website itu
 
 /*============== WATERMARK ==============*/
-global.wm = '                「 𝐗𝐇𝐈𝐓𝐎𝐑𝐈 」' //Main Watermark
-global.wm2 = '𝐗𝐇𝐈𝐓𝐎𝐑𝐈'
-global.wm3 = '⛧𝐗𝐇𝐈𝐓𝐎𝐑𝐈'
+global.wm = '                「 𝗗𝗶𝗮𝗻𝘀 𝗔𝗷𝗮 」' //Main Watermark
+global.wm2 = '𝗭𝘆𝗸𝗼𝗕𝗼𝘁𝘇-𝗠𝗗'
+global.wm3 = '⛧𝗭𝘆𝗸𝗼𝗕𝗼𝘁𝘇-𝗠𝗗'
 global.botdate = `⫹⫺ 𝗗𝗮𝘁𝗲: ${week} ${date}`
 global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
-global.titlebot = '⛧┊ 𝐇𝐈𝐓𝐎𝐑𝐈 𝐁𝐎𝐓'
+global.titlebot = '⛧┊ 𝗭𝘆𝗸𝗼𝗕𝗼𝘁𝘇-𝗠𝗗'
 global.author = global.wm
 
 
